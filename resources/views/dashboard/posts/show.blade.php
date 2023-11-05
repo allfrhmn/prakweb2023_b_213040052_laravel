@@ -14,8 +14,14 @@
                     <button class="badge bg-danger border-0" onclick="return confirm('Are you sure?')"><i class="bi bi-trash"> Delete</i></button>    
                 </form>
 
-                <img src="https://picsum.photos/1200/400?d{{ $post->category->name }}" class="img-fluid mt-3" alt="{{ $post->category->name }}">
-
+                @if ($post->image)
+                    <div style="max-height: 350px; overflow: hidden;">
+                        <img src="{{ asset('storage/' . $post->image) }}" alt="{{ $post->category->name }}" class="img-fluid mt-3">
+                    </div>
+                @else
+                    <img src="https://picsum.photos/1200/400?d{{ $post->category->name }}" alt="{{ $post->category->name }}" class="img-fluid mt-3">
+                @endif
+                
                 <article class="my-3 fs-5">
                     {!! $post->body !!}
                 </article>
