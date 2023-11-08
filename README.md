@@ -19,11 +19,7 @@ Instalasi proyek ini dengan menggunakan terminal git bash.
 git clone https://github.com/allfrhmn/prakweb2023_b_213040052_laravel.git project-name
 ```
 
-Buatlah satu file dengan nama **.env** dan silakan salin semua yang ada di dalam file **.env.example** ke dalam file **.env**. Kemudian, menggunakan terminal git bash untuk generasi kunci baru.
-
-```bash
-php artisan key:generate
-```
+Buatlah satu file dengan nama **.env** dan silakan salin semua yang ada di dalam file **.env.example** ke dalam file **.env**.
 
 Buatlah satu basis data dan sesuaikan namanya dengan konfigurasi yang ada di file **.env**.
 
